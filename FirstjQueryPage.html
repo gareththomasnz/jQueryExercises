@@ -2,9 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>First jQuery-Enabled Page</title>
+    <script type="text/javascript" src="../jquery-1.6.4.js"></script>
     
-    <!-- insert the script to reference jQuery here -->
-    <!-- insert the script to display the Hello World message here -->
+    <script>
+        function runOnLoad() {
+            alert("The Page Just Loaded!");
+        }
+        window.onload= runOnLoad;
+    </script>
 </head>
 <body>
 
