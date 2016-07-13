@@ -2,14 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>First jQuery-Enabled Page</title>
-    <script type="text/javascript" src="../jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="jquery-1.6.4.js"></script>
     
-    <script>
+<!--    <script>
         function runOnLoad() {
             alert("The Page Just Loaded!");
         }
         window.onload= runOnLoad;
+    </script>-->
+    
+    <script type="text/javascript" >
+        $("document").ready( function() {
+            alert("The Page Just Loaded!");
+        });
     </script>
+    
 </head>
 <body>
 
