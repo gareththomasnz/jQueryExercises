@@ -8,10 +8,10 @@
 <script type="text/javascript" src="jquery-1.6.4.js"></script>
 <script type="text/javascript">
     $("document").ready(function() {
-	//$("#list1").css("border", "3PX solid red");
-	$("#list1").css("border", "3PX solid gray");
-  $("p.b").css("border", "3PX solid orange");
-	//$("p").css("border", "3px solid blue");
+        //$("p,li.b").css("border", "3px solid red");
+        //$("ul li.a").css("border", "3px solid red");
+        ("ul + p").css("border", "3PX solid red");
+        //$("#list1 ~ p").css("border", "3px solid red");
     });
 </script>
 <style type="text/css">
@@ -27,8 +27,8 @@
 		<li class="b">item 4</li>
 	</ul>
 <p class="a">This is paragraph 1</p>
-<p>This is paragraph 2</p>
+<p id="para1">This is paragraph 2</p>
 <p class="b">This is paragraph 3</p>
 <p>This is paragraph 4</p>
 </body>
-</html>PXPXPX
+</html>

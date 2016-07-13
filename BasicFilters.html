@@ -4,14 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 <title>Document</title>
 <script type="text/javascript" src="jquery-1.6.4.js"></script>
 <script type="text/javascript">
     $("document").ready(function() {
-	//$("#list1").css("border", "3PX solid red");
-	$("#list1").css("border", "3PX solid gray");
-  $("p.b").css("border", "3PX solid orange");
-	//$("p").css("border", "3px solid blue");
+        //$("p:first").css("border", "3px solid red");
+        //$("p:last").css("border", "3px solid red");
+        //$("p:even").css("border", "3px solid red");
+        //$("p:odd").css("border", "3px solid red");
+        //$(".a:first").css("border", "3px solid red");
+        //$(".b:even").css("border", "3px solid red");
+        //$("p:gt(1)").css("border","3px solid red");
+        $("p:not(p:eq(2))").css("border", "3px solid red");		
     });
 </script>
 <style type="text/css">
@@ -27,8 +32,8 @@
 		<li class="b">item 4</li>
 	</ul>
 <p class="a">This is paragraph 1</p>
-<p>This is paragraph 2</p>
+<p id="para1">This is paragraph 2</p>
 <p class="b">This is paragraph 3</p>
-<p>This is paragraph 4</p>
+<p id="para4" lang="en-us">This is paragraph 4</p>
 </body>
-</html>PXPXPX
+</html>
