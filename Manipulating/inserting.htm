@@ -1,0 +1,34 @@
+﻿<!DOC TYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document</title>
+<script type="text/javascript" src="../jquery-1.6.4.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+        //$("p").append(" with some content appended");
+        //$("p").prepend("Hello! ");
+        //$("p:last").appendTo("p:first");
+        $("p:last").prependTo("p:first");			
+    });
+</script>
+<style type="text/css">
+.a { color: Navy; }
+.b { color: Maroon; }
+</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+<p class="a">This is paragraph 1</p>
+<p>This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p>This is paragraph 4</p>
+</body>
+</html>
