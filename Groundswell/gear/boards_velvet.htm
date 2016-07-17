@@ -1,9 +1,30 @@
 <!DOC TYPE HTML>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Groundswell Gear</title>
     <link href="../_css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    <link href="../_css/sunny/jquery-ui.theme.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    <script type="text/javascript" src="../_scripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../_scripts/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $("#viewlarger").hover(
+            function() {
+                var offset = $("#gearItem").offset();
+                $("#tooltip1").css("top", offset.top).css("left", offset.left).css("display", "block");
+                $("#tooltip1").animate({ opacity: 1.0 }, 300);
+            },
+            function() {
+                $("#tooltip1").animate({ opacity: 0.0 }, 300, function() {
+                    $("#tooltip1").css("display", "none");
+                });
+            }
+        );
+        });
+    </script>
 </head>
 <body>
     <div id="wrapper">
